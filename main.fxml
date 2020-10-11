@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500" prefWidth="750" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.koreait.semipro.MainController">
+   <children>
+      <MenuBar prefHeight="38.0" prefWidth="750.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="메뉴">
+            <items>
+              <MenuItem fx:id="menu_pizza" mnemonicParsing="false" text="피자" />
+                  <MenuItem fx:id="menu_topping" mnemonicParsing="false" text="토핑" />
+                  <MenuItem fx:id="menu_drink" mnemonicParsing="false" text="음료" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="마이페이지">
+            <items>
+              <MenuItem fx:id="modifyInfo" mnemonicParsing="false" text="정보수정" />
+              <MenuItem fx:id="cart" mnemonicParsing="false" text="장바구니" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ToolBar layoutY="39.0" prefHeight="31.0" prefWidth="750.0">
+         <items>
+          <Button fx:id="btn1" mnemonicParsing="false" style="-fx-background-color: transparent;" text="피자">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@onepiece.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn2" mnemonicParsing="false" style="-fx-background-color: transparent;" text="토핑">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@mushroom.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn3" mnemonicParsing="false" style="-fx-background-color: transparent;" text="음료">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@coke.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn4" mnemonicParsing="false" style="-fx-background-color: transparent;" text="내정보수정">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@myinfo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn5" mnemonicParsing="false" style="-fx-background-color: transparent;" text="장바구니">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </items>
+      </ToolBar>
+      <ImageView fitHeight="412.0" fitWidth="750.0" layoutY="88.0">
+         <image>
+            <Image url="@pizzaback.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogout" layoutX="31.0" layoutY="439.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="로그아웃" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClose" layoutX="117.0" layoutY="439.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="종료" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

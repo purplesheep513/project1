@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.koreait.semipro.adminController">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="회원관리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tv1" prefHeight="378.0" prefWidth="756.0">
+                          <columns>
+                              <TableColumn maxWidth="50.0" prefWidth="50.0" text="idx" />
+                              <TableColumn prefWidth="140.0" text="회원이름" />
+                              <TableColumn minWidth="0.0" prefWidth="140.0" text="회원 아이디" />
+                              <TableColumn minWidth="0.0" prefWidth="140.0" text="이메일" />
+                              <TableColumn minWidth="0.0" prefWidth="140.0" text="30%쿠폰" />
+                              <TableColumn minWidth="0.0" prefWidth="140.0" text="10%쿠폰" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnMemModi" layoutX="672.0" layoutY="406.0" mnemonicParsing="false" text="수정" />
+                        <TextField fx:id="txtMem30" layoutX="445.0" layoutY="411.0" prefHeight="0.0" prefWidth="99.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtMem10" layoutX="556.0" layoutY="411.0" prefHeight="0.0" prefWidth="99.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="42.0" layoutY="416.0" text="선택회원 삭제 :">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="473.0" layoutY="390.0" text="30% 쿠폰">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="584.0" layoutY="390.0" text="10% 쿠폰">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnMemDel" layoutX="119.0" layoutY="411.0" mnemonicParsing="false" text="ok" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="피자메뉴관리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tv2" prefHeight="378.0" prefWidth="750.0">
+                          <columns>
+                            <TableColumn prefWidth="150.0" text="피자상품번호" />
+                            <TableColumn prefWidth="150.0" text="피자명" />
+                              <TableColumn prefWidth="300.0" text="상세설명" />
+                              <TableColumn prefWidth="150.0" text="가격" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnPizzaAdd" layoutX="672.0" layoutY="406.0" mnemonicParsing="false" text="수정" />
+                        <TextField fx:id="PizzaPrice" layoutX="568.0" layoutY="411.0" prefHeight="23.0" prefWidth="85.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPizzaIdx" layoutX="20.0" layoutY="411.0" prefHeight="23.0" prefWidth="85.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="PizzaInfo" layoutX="280.0" layoutY="411.0" prefHeight="23.0" prefWidth="276.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="PizzaName" layoutX="117.0" layoutY="411.0" prefHeight="23.0" prefWidth="152.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="41.0" layoutY="390.0" text="상품 번호">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="178.0" layoutY="390.0" text="피자명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="386.0" layoutY="390.0" text="피자 상세설명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="601.0" layoutY="390.0" text="가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="573.0" layoutY="443.0" text="삭제는 테이블클릭으로">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="토핑메뉴관리">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tv3" prefHeight="378.0" prefWidth="750.0">
+                           <columns>
+                              <TableColumn prefWidth="150.0" text="토핑상품번호" />
+                              <TableColumn prefWidth="150.0" text="토핑명" />
+                              <TableColumn prefWidth="150.0" text="가격" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnTopAdd" layoutX="672.0" layoutY="406.0" mnemonicParsing="false" text="수정" />
+                        <TextField fx:id="txtTopPrice" layoutX="419.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTopName" layoutX="270.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTopIdx" layoutX="120.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="169.0" layoutY="390.0" text="상품번호">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="324.0" layoutY="390.0" text="토핑명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="478.0" layoutY="390.0" text="가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="573.0" layoutY="443.0" text="삭제는 테이블클릭으로">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="음료메뉴관리">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tv4" prefHeight="378.0" prefWidth="750.0">
+                           <columns>
+                              <TableColumn prefWidth="150.0" text="음료상품번호" />
+                              <TableColumn prefWidth="150.0" text="음료명" />
+                              <TableColumn prefWidth="150.0" text="500ml 가격" />
+                              <TableColumn prefWidth="150.0" text="1.5L 가격" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnDrinkAdd" layoutX="672.0" layoutY="406.0" mnemonicParsing="false" text="수정" />
+                        <TextField fx:id="txtDrinkIdx" layoutX="51.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDrinkName" layoutX="203.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txt500Price" layoutX="353.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txt15Price" layoutX="502.0" layoutY="411.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="100.0" layoutY="390.0" text="상품번호">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="257.0" layoutY="390.0" text="음료명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="395.0" layoutY="390.0" text="500ml 가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="549.0" layoutY="390.0" text="1.5L 가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="573.0" layoutY="443.0" text="삭제는 테이블 클릭으로">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="메뉴추가">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtPizzaIdxAdd" layoutX="40.0" layoutY="92.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPizzaNameadd" layoutX="192.0" layoutY="92.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPizzaInfoAdd" layoutX="343.0" layoutY="92.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPizzaPriceAdd" layoutX="494.0" layoutY="92.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDrink15add" layoutX="494.0" layoutY="356.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDrink500add" layoutX="343.0" layoutY="356.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDrinkNameAdd" layoutX="192.0" layoutY="356.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDrinkIdxAdd" layoutX="40.0" layoutY="356.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTopIdxAdd" layoutX="42.0" layoutY="218.0" prefHeight="23.0" prefWidth="189.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTopNameAdd" layoutX="244.0" layoutY="218.0" prefHeight="23.0" prefWidth="189.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTopPriceAdd" layoutX="445.0" layoutY="218.0" prefHeight="23.0" prefWidth="189.0">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnPizzaAddTrue" layoutX="664.0" layoutY="92.0" mnemonicParsing="false" text="추가">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnTopAddTrue" layoutX="664.0" layoutY="218.0" mnemonicParsing="false" text="추가">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDrinkAddTrue" layoutX="664.0" layoutY="356.0" mnemonicParsing="false" text="추가">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="40.0" layoutY="24.0" text="피자추가">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="148.0" text="토핑추가">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="280.0" text="음료추가">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="70.0" text="상품번호">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="117.0" layoutY="196.0" text="상품번호">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="334.0" text="상품번호">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="71.0" text="피자명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="379.0" layoutY="71.0" text="피자 상세 설명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="553.0" layoutY="70.0" text="가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="530.0" layoutY="196.0" text="가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="541.0" layoutY="334.0" text="1.5L 가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="323.0" layoutY="196.0" text="토핑명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="334.0" prefHeight="5.0" prefWidth="30.0" text="음료명">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="385.0" layoutY="334.0" text="500ml 가격">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

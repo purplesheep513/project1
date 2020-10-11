@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="100.0" layoutY="24.0" text="이름">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField layoutX="103.0" layoutY="45.0" prefHeight="21.0" prefWidth="150.0" fx:id="textFieldName">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="100.0" layoutY="80.0" text="아이디">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField layoutX="103.0" layoutY="97.0" prefHeight="21.0" prefWidth="110.0" fx:id="txtFieldId">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="220.0" layoutY="100.0" fx:id="chkIdLabel">
+     	 <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="147.0" text="비밀번호">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="103.0" layoutY="165.0" prefHeight="21.0" prefWidth="150.0" fx:id="password1">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="100.0" layoutY="189.0" text="비밀번호확인">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="103.0" layoutY="204.0" prefHeight="21.0" prefWidth="150.0" fx:id="password2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="262.0" layoutY="207.0" fx:id="chkPasswordLabel">
+     	 <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="266.0" text="이메일주소">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="310.0" fx:id="chkEmailLabel">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="267.0" layoutY="285" prefHeight="22.0" prefWidth="38.0" text="확인" fx:id="chkEmail">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <TextField layoutX="103.0" layoutY="286.0" prefHeight="21.0" prefWidth="150.0" fx:id="textFieldEmail">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="100.0" layoutY="326.0" text="배송지">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField layoutX="103.0" layoutY="346.0" prefHeight="21.0" prefWidth="183.0" fx:id="textFieldAddress">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="100.0" layoutY="380.0" text="추천인 아이디">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField layoutX="103.0" layoutY="404.0" prefHeight="22.0" prefWidth="106.0" fx:id="textFieldRecommender">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Button layoutX="317.0" layoutY="458.0" text="가입" fx:id="btnJoin_joinpage">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+  		<Button layoutX="267.0" layoutY="125.0" prefHeight="22.0" prefWidth="38.0" text="확인" fx:id="chkID">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="165.0" layoutY="236.0" text="비밀번호 일치체크">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="267.0" layoutY="232.0" prefHeight="22.0" prefWidth="38.0" text="확인" fx:id="chkPassword">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="182.0" layoutY="129.0" text="아이디 중복체크">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="218.0" layoutY="404.0" prefHeight="22.0" prefWidth="38.0" text="확인" fx:id="chkRecommender">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="260" layoutY="410.0" fx:id="chkRecommenderLabel">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="465.0" fx:id="chkJoinLabel" >
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="135.0" prefWidth="250.0" style="-fx-background-color: #ECCEF5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView layoutX="14.0" layoutY="47.0">
+         <image>
+            <Image url="@deliver.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="20.0" prefWidth="250.0" style="-fx-background-color: #9F81F7;">
+         <children>
+            <Label layoutX="7.0" layoutY="2.0" text="주문완료">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="132.0" layoutY="44.0" text="주문이" />
+      <Label layoutX="103.0" layoutY="68.0" text="완료되었습니다" />
+      <Button fx:id="btnFinal" layoutX="139.0" layoutY="103.0" mnemonicParsing="false" text="확인">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

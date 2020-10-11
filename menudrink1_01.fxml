@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"  prefHeight="430.0" prefWidth="500.0"
+fx:controller="com.koreait.semipro.menudrink1_01Controller">
+	<children>
+      <ScrollPane fx:id="scroll" prefHeight="495.0" prefWidth="565.0">
+         <content>
+            <AnchorPane fx:id="anchorPane" prefHeight="530.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="90.0" prefWidth="250.0" style="-fx-background-radius: 20; -fx-background-color: lightBlue;" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="labInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="9.0" maxWidth="210.0" prefHeight="75.0" prefWidth="210.0" textAlignment="CENTER" textFill="#090c3c">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
